@@ -1,0 +1,74 @@
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { DropletIcon, Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex items-center justify-between h-16">
+          <Link to="/" className="flex items-center gap-2">
+            <DropletIcon className="h-6 w-6 text-aqua-600" />
+            <span className="font-bold text-gray-900 text-xl">AquaCalc</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link to="/#features" className="text-gray-600 hover:text-aqua-600 transition-colors">Features</Link>
+            <Link to="/#how-it-works" className="text-gray-600 hover:text-aqua-600 transition-colors">How It Works</Link>
+            <Link to="/#benefits" className="text-gray-600 hover:text-aqua-600 transition-colors">Benefits</Link>
+          </nav>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <Button asChild variant="outline" className="border-aqua-200 text-aqua-700 hover:bg-aqua-50">
+              <Link to="/demo">View Demo</Link>
+            </Button>
+            <Button asChild className="bg-aqua-600 hover:bg-aqua-700 text-white">
+              <Link to="/try-demo">Try Demo</Link>
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-gray-600" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-600" />
+              )}
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4">
+          <nav className="flex flex-col space-y-3">
+            <Link to="/#features" className="text-gray-600 hover:text-aqua-600 transition-colors py-2" onClick={toggleMenu}>Features</Link>
+            <Link to="/#how-it-works" className="text-gray-600 hover:text-aqua-600 transition-colors py-2" onClick={toggleMenu}>How It Works</Link>
+            <Link to="/#benefits" className="text-gray-600 hover:text-aqua-600 transition-colors py-2" onClick={toggleMenu}>Benefits</Link>
+            <div className="flex flex-col space-y-3 pt-3 border-t border-gray-100">
+              <Button asChild variant="outline" className="border-aqua-200 text-aqua-700 hover:bg-aqua-50 w-full">
+                <Link to="/demo" onClick={toggleMenu}>View Demo</Link>
+              </Button>
+              <Button asChild className="bg-aqua-600 hover:bg-aqua-700 text-white w-full">
+                <Link to="/try-demo" onClick={toggleMenu}>Try Demo</Link>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Header;
