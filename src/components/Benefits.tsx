@@ -3,7 +3,7 @@ import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
 const benefitItems = [
-  "Reduce water consumption by up to 30% with AI-recommended practices",
+  "Reduce water consumption with AI-recommended practices",
   "Make data-driven decisions about crop selection and irrigation methods",
   "Comply with water usage regulations and sustainability requirements",
   "Integrate with existing farm management systems",

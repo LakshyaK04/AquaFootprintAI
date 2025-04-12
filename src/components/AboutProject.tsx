@@ -19,8 +19,8 @@ const AboutProject = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-lg p-5 shadow-md flex flex-col items-center justify-center text-center">
                 <Droplet className="h-10 w-10 text-aqua-500 mb-3" />
-                <h3 className="font-semibold text-gray-900">30% Water Savings</h3>
-                <p className="mt-2 text-sm text-gray-600">Our AI recommendations can help reduce water usage by up to 30%</p>
+                <h3 className="font-semibold text-gray-900">Water Savings</h3>
+                <p className="mt-2 text-sm text-gray-600">Our AI recommendations can help reduce water usage</p>
               </div>
               
               <div className="bg-white rounded-lg p-5 shadow-md flex flex-col items-center justify-center text-center">
@@ -62,7 +62,7 @@ const AboutProject = () => {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Impact</h3>
                 <p className="text-gray-600">
-                  By implementing our recommendations, agricultural operations can reduce water consumption by up to 30% while maintaining or improving crop yields, contributing to more sustainable farming practices worldwide.
+                  By implementing our recommendations, agricultural operations can reduce water consumption, while maintaining or improving crop yields, contributing to more sustainable farming practices worldwide.
                 </p>
               </div>
             </CardContent>

@@ -20,13 +20,13 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-gray-600 max-w-xl">
-              Calculate and analyze the water footprint of your agricultural practices using advanced AI technology, satellite data, and real-time climate information.
+             Estimate crop-wise water consumption using AI, satellite data, and real-time climate inputs to support sustainable and climate-resilient farming.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild className="group bg-aqua-600 hover:bg-aqua-700 text-white font-medium rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto">
                 <a href="https://youtu.be/CS9geRQpY4U" target="_blank" rel="noopener noreferrer">
-                  View Our Demo
+                  Walkthrough Video
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>

@@ -20,7 +20,7 @@ const CallToAction = () => {
           <div className="lg:w-1/3 flex flex-col sm:flex-row lg:flex-col gap-4">
             <Button asChild className="group bg-white hover:bg-gray-50 text-aqua-700 font-medium rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 w-full">
               <a href="https://youtu.be/CS9geRQpY4U" target="_blank" rel="noopener noreferrer">
-                View Our Demo
+                Walkthrough Video
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

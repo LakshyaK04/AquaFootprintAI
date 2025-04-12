@@ -19,8 +19,8 @@ const steps = [
   },
   {
     number: "04",
-    title: "Apply Recommendations",
-    description: "Implement suggested water-efficient practices and explore alternative crops to reduce your water footprint and improve sustainability."
+    title: "Recommendation Engine",
+    description: "Explore alternative crops to reduce your water footprint and improve sustainability."
   }
 ];
 

@@ -40,10 +40,10 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Button asChild variant="outline" className="border-aqua-200 text-aqua-700 hover:bg-aqua-50">
-              <Link to="/demo">View Demo</Link>
+              <Link to="https://youtu.be/CS9geRQpY4U">Walkthrough Video</Link>
             </Button>
             <Button asChild className="bg-aqua-600 hover:bg-aqua-700 text-white">
-              <Link to="/try-demo">Try Demo</Link>
+              <Link to="https://ai-powered-water-footprint-calculator.streamlit.app">Try Demo</Link>
             </Button>
           </div>
 
