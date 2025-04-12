@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, DropletIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   return (
@@ -20,17 +19,17 @@ const CallToAction = () => {
           
           <div className="lg:w-1/3 flex flex-col sm:flex-row lg:flex-col gap-4">
             <Button asChild className="group bg-white hover:bg-gray-50 text-aqua-700 font-medium rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 w-full">
-              <Link to="/demo">
+              <a href="https://youtu.be/CS9geRQpY4U" target="_blank" rel="noopener noreferrer">
                 View Our Demo
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
             
             <Button asChild variant="outline" className="group bg-transparent hover:bg-white/10 text-white font-medium border-white border-2 rounded-full px-6 py-3 shadow-md hover:shadow-lg transition-all duration-300 w-full">
-              <Link to="/try-demo">
+              <a href="https://ai-powered-water-footprint-calculator.streamlit.app" target="_blank" rel="noopener noreferrer">
                 Try Our Demo
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

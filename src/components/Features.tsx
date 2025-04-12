@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BarChart3, Cloud, Droplet, Leaf, LineChart, FileType, Database, Github, Film, PresentationIcon } from 'lucide-react';
+import { BarChart3, Cloud, Droplet, Leaf, LineChart, FileType, Database, Github, Film } from 'lucide-react';
 
 const featureItems = [
   {
@@ -47,11 +47,6 @@ const featureItems = [
     icon: <Film className="h-10 w-10 text-aqua-600" />,
     title: "Demo Video",
     description: "Detailed walkthrough showcasing platform workflow and features."
-  },
-  {
-    icon: <PresentationIcon className="h-10 w-10 text-aqua-600" />,
-    title: "Presentation Deck",
-    description: "Overview of the problem, solution, architecture, and future scope."
   }
 ];
 
