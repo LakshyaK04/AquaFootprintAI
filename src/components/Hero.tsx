@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, DropletIcon } from 'lucide-react';
+import { ArrowRight, Sprout, Droplet, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -44,8 +44,10 @@ const Hero = () => {
           <div className="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
             <div className="relative w-72 h-72 sm:w-96 sm:h-96 animate-float">
               <div className="absolute inset-0 bg-gradient-to-br from-aqua-300/50 to-leaf-300/50 rounded-full blur-3xl opacity-40"></div>
-              <div className="relative flex items-center justify-center h-full">
-                <DropletIcon className="w-32 h-32 text-aqua-500" strokeWidth={1} />
+              <div className="relative flex items-center justify-center h-full space-x-4">
+                <Sprout className="w-24 h-24 text-leaf-500" strokeWidth={1} />
+                <Droplet className="w-16 h-16 text-aqua-500" strokeWidth={1} />
+                <Leaf className="w-20 h-20 text-leaf-600" strokeWidth={1} />
               </div>
             </div>
           </div>
