@@ -16,8 +16,8 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block text-aqua-600">AI-Powered</span>
-              <span className="block">Water Footprint Calculator</span>
+              <span className="block text-aqua-600">AquaFootprint AI</span>
+              <span className="block">for Sustainable Agriculture</span>
             </h1>
             
             <p className="text-xl text-gray-600 max-w-xl">
